@@ -6,7 +6,6 @@ A modern, highly aesthetic, responsive personal portfolio website showcasing bio
 
 - ✨ Ultra-aesthetic, minimal, clean design
 - 🎨 Soft gradients and glassmorphism accents
-- 🌓 Dark mode + light mode toggle
 - 📱 Fully responsive (desktop + mobile)
 - 🎭 Smooth page transitions and component animations
 - 🔍 Project filtering by category
@@ -19,7 +18,6 @@ A modern, highly aesthetic, responsive personal portfolio website showcasing bio
 - **Styling**: Tailwind CSS
 - **Animations**: Framer Motion
 - **Icons**: Lucide React
-- **Theme**: next-themes
 
 ## Getting Started
 
@@ -63,7 +61,6 @@ portfolio_website/
 │   │   ├── Footer.tsx       # Footer component
 │   │   ├── Section.tsx      # Reusable section wrapper
 │   │   ├── ProjectCard.tsx  # Project card component
-│   │   ├── ThemeProvider.tsx # Theme context provider
 │   │   └── sections/
 │   │       ├── Hero.tsx     # Hero section
 │   │       ├── About.tsx    # About section
