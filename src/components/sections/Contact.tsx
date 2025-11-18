@@ -36,7 +36,7 @@ export default function Contact() {
   return (
     <Section
       id="contact"
-      className="bg-white dark:bg-gray-900 relative overflow-hidden"
+      className="bg-white relative overflow-hidden"
     >
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-full blur-3xl" />
@@ -51,9 +51,9 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-bold mb-4">
-            <span className="gradient-text dark:gradient-text-dark">Get In Touch</span>
+            <span className="gradient-text">Get In Touch</span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Let's connect and discuss opportunities in ML, research, or full-stack development
           </p>
         </motion.div>
@@ -68,10 +68,10 @@ export default function Contact() {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+              <h3 className="text-3xl font-bold text-gray-900 mb-6">
                 Let's Connect
               </h3>
-              <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
+              <p className="text-lg text-gray-600 leading-relaxed mb-8">
                 I'm always open to discussing new projects, research opportunities, or just having
                 a chat about technology and innovation. Whether you're interested in collaboration,
                 have questions about my work, or want to explore potential opportunities, feel free
@@ -96,16 +96,16 @@ export default function Contact() {
                   href={social.href}
                   target={social.href.startsWith('http') ? '_blank' : undefined}
                   rel={social.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                  className="group flex items-center space-x-4 p-4 rounded-2xl glass-light dark:glass-dark border border-gray-200/50 dark:border-gray-700/50 hover:border-blue-500/50 dark:hover:border-blue-400/50 transition-all"
+                  className="group flex items-center space-x-4 p-4 rounded-2xl glass-light border border-gray-200/50 hover:border-blue-500/50 transition-all"
                 >
                   <div className="p-3 rounded-xl bg-gradient-to-br from-blue-500 to-purple-500 shadow-lg group-hover:scale-110 transition-transform">
                     <social.icon className="text-white" size={20} />
                   </div>
                   <div className="flex-1">
-                    <div className="text-sm text-gray-600 dark:text-gray-400 mb-1">{social.label}</div>
-                    <div className="text-base font-semibold text-gray-900 dark:text-white">{social.value}</div>
+                    <div className="text-sm text-gray-600 mb-1">{social.label}</div>
+                    <div className="text-base font-semibold text-gray-900">{social.value}</div>
                   </div>
-                  <ArrowRight className="text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 group-hover:translate-x-1 transition-all" size={20} />
+                  <ArrowRight className="text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all" size={20} />
                 </motion.a>
               ))}
             </div>
@@ -135,13 +135,13 @@ export default function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             onSubmit={handleSubmit}
-            className="p-8 rounded-3xl glass-light dark:glass-dark border border-gray-200/50 dark:border-gray-700/50 shadow-xl"
+            className="p-8 rounded-3xl glass-light border border-gray-200/50 shadow-xl"
           >
             <div className="space-y-6">
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
+                  className="block text-sm font-semibold text-gray-700 mb-2"
                 >
                   Name
                 </label>
@@ -152,7 +152,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white/50 backdrop-blur-sm text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                   placeholder="Your name"
                 />
               </div>
@@ -160,7 +160,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
+                  className="block text-sm font-semibold text-gray-700 mb-2"
                 >
                   Email
                 </label>
@@ -171,7 +171,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white/50 backdrop-blur-sm text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                   placeholder="your.email@example.com"
                 />
               </div>
@@ -179,7 +179,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
+                  className="block text-sm font-semibold text-gray-700 mb-2"
                 >
                   Message
                 </label>
@@ -190,7 +190,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white/50 backdrop-blur-sm text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
                   placeholder="Your message..."
                 />
               </div>

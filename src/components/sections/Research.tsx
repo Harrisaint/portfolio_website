@@ -9,7 +9,7 @@ export default function Research() {
   return (
     <Section
       id="research"
-      className="bg-white dark:bg-gray-900 relative overflow-hidden"
+      className="bg-white relative overflow-hidden"
     >
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-full blur-3xl" />
@@ -24,9 +24,9 @@ export default function Research() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-bold mb-4">
-            <span className="gradient-text dark:gradient-text-dark">Research</span>
+            <span className="gradient-text">Research</span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Exploring the frontiers of computational biology and molecular dynamics
           </p>
         </motion.div>
@@ -46,24 +46,24 @@ export default function Research() {
               {/* Glow effect */}
               <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity" />
               
-              <div className="relative h-full p-8 rounded-3xl glass-light dark:glass-dark border border-gray-200/50 dark:border-gray-700/50 hover:border-purple-500/50 dark:hover:border-purple-400/50 transition-all shadow-xl hover:shadow-2xl">
+              <div className="relative h-full p-8 rounded-3xl glass-light border border-gray-200/50 hover:border-purple-500/50 transition-all shadow-xl hover:shadow-2xl">
                 {/* Icon Header */}
                 <div className="flex items-start space-x-4 mb-6">
                   <div className="p-4 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 shadow-lg">
                     <FlaskConical className="text-white" size={28} />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-1">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-1">
                       {research.title}
                     </h3>
-                    <p className="text-purple-600 dark:text-purple-400 font-semibold">
+                    <p className="text-purple-600 font-semibold">
                       {research.lab}
                     </p>
                   </div>
                 </div>
 
                 {/* Description */}
-                <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                <p className="text-gray-700 mb-6 leading-relaxed">
                   {research.description}
                 </p>
 
@@ -76,20 +76,20 @@ export default function Research() {
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ delay: index * 0.2 + idx * 0.1 }}
-                      className="flex items-start text-gray-600 dark:text-gray-400"
+                      className="flex items-start text-gray-600"
                     >
-                      <span className="text-purple-600 dark:text-purple-400 mr-3 mt-1">▸</span>
+                      <span className="text-purple-600 mr-3 mt-1">▸</span>
                       <span>{detail}</span>
                     </motion.li>
                   ))}
                 </ul>
 
                 {/* Technologies */}
-                <div className="flex flex-wrap gap-2 pt-6 border-t border-gray-200/50 dark:border-gray-700/50">
+                <div className="flex flex-wrap gap-2 pt-6 border-t border-gray-200/50">
                   {research.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1.5 text-sm rounded-lg bg-gradient-to-r from-purple-500/10 to-pink-500/10 dark:from-purple-500/20 dark:to-pink-500/20 border border-purple-500/20 dark:border-purple-400/30 text-purple-700 dark:text-purple-300 font-medium"
+                      className="px-3 py-1.5 text-sm rounded-lg bg-gradient-to-r from-purple-500/10 to-pink-500/10 border border-purple-500/20 text-purple-700 font-medium"
                     >
                       {tech}
                     </span>
@@ -121,11 +121,11 @@ export default function Research() {
               viewport={{ once: true }}
               transition={{ delay: 0.5 + index * 0.1 }}
               whileHover={{ scale: 1.05 }}
-              className="p-6 rounded-2xl glass-light dark:glass-dark border border-gray-200/50 dark:border-gray-700/50 text-center"
+              className="p-6 rounded-2xl glass-light border border-gray-200/50 text-center"
             >
-              <stat.icon className="mx-auto mb-3 text-purple-600 dark:text-purple-400" size={24} />
-              <div className="text-sm text-gray-600 dark:text-gray-400 mb-1">{stat.label}</div>
-              <div className="text-lg font-bold text-gray-900 dark:text-white">{stat.value}</div>
+              <stat.icon className="mx-auto mb-3 text-purple-600" size={24} />
+              <div className="text-sm text-gray-600 mb-1">{stat.label}</div>
+              <div className="text-lg font-bold text-gray-900">{stat.value}</div>
             </motion.div>
           ))}
         </motion.div>

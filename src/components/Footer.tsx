@@ -6,7 +6,7 @@ import { personalInfo } from '@/data/personal';
 
 export default function Footer() {
   return (
-    <footer className="relative bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950 border-t border-gray-200/50 dark:border-gray-800/50 overflow-hidden">
+    <footer className="relative bg-gradient-to-b from-gray-50 to-white border-t border-gray-200/50 overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500 rounded-full blur-3xl" />
@@ -19,7 +19,7 @@ export default function Footer() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="flex items-center space-x-2 text-gray-600 dark:text-gray-400"
+            className="flex items-center space-x-2 text-gray-600"
           >
             <span>© {new Date().getFullYear()} Harrison Martin.</span>
             <span className="flex items-center space-x-1">
@@ -56,7 +56,7 @@ export default function Footer() {
                 href={social.href}
                 target={social.href.startsWith('http') ? '_blank' : undefined}
                 rel={social.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                className="p-3 rounded-xl glass-light dark:glass-dark border border-gray-200/50 dark:border-gray-700/50 hover:border-blue-500/50 dark:hover:border-blue-400/50 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all shadow-sm hover:shadow-md"
+                className="p-3 rounded-xl glass-light border border-gray-200/50 hover:border-blue-500/50 text-gray-600 hover:text-blue-600 transition-all shadow-sm hover:shadow-md"
                 aria-label={social.label}
               >
                 <social.icon size={20} />

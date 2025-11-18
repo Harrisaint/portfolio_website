@@ -32,7 +32,7 @@ export default function Hero() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Animated Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-indigo-50 via-purple-50 to-pink-50 dark:from-gray-900 dark:via-blue-950 dark:via-purple-950 dark:to-gray-900" />
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-indigo-50 via-purple-50 to-pink-50" />
 
       {/* Floating Blobs */}
       <div className="absolute inset-0 overflow-hidden">
@@ -42,7 +42,7 @@ export default function Hero() {
             y: mousePosition.y,
           }}
           transition={{ type: 'spring', stiffness: 50, damping: 20 }}
-          className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-br from-blue-400/30 to-purple-400/30 rounded-full mix-blend-multiply dark:mix-blend-soft-light filter blur-3xl animate-blob"
+          className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-br from-blue-400/30 to-purple-400/30 rounded-full mix-blend-multiply filter blur-3xl animate-blob"
         />
         <motion.div
           animate={{
@@ -50,7 +50,7 @@ export default function Hero() {
             y: -mousePosition.y * 0.5,
           }}
           transition={{ type: 'spring', stiffness: 50, damping: 20 }}
-          className="absolute top-40 right-10 w-96 h-96 bg-gradient-to-br from-purple-400/30 to-pink-400/30 rounded-full mix-blend-multiply dark:mix-blend-soft-light filter blur-3xl animate-blob animation-delay-2000"
+          className="absolute top-40 right-10 w-96 h-96 bg-gradient-to-br from-purple-400/30 to-pink-400/30 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"
         />
         <motion.div
           animate={{
@@ -58,7 +58,7 @@ export default function Hero() {
             y: mousePosition.y * 0.3,
           }}
           transition={{ type: 'spring', stiffness: 50, damping: 20 }}
-          className="absolute -bottom-20 left-1/2 w-96 h-96 bg-gradient-to-br from-pink-400/30 to-blue-400/30 rounded-full mix-blend-multiply dark:mix-blend-soft-light filter blur-3xl animate-blob animation-delay-4000"
+          className="absolute -bottom-20 left-1/2 w-96 h-96 bg-gradient-to-br from-pink-400/30 to-blue-400/30 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"
         />
       </div>
 
@@ -74,10 +74,10 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
-            className="inline-flex items-center space-x-2 px-4 py-2 mb-8 rounded-full glass-light dark:glass-dark border border-gray-200/50 dark:border-gray-700/50"
+            className="inline-flex items-center space-x-2 px-4 py-2 mb-8 rounded-full glass-light border border-gray-200/50"
           >
-            <Sparkles size={16} className="text-blue-600 dark:text-blue-400" />
-            <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+            <Sparkles size={16} className="text-blue-600" />
+            <span className="text-sm font-medium text-gray-700">
               Biomedical Engineering & Data Science
             </span>
           </motion.div>
@@ -89,11 +89,11 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="text-6xl md:text-8xl lg:text-9xl font-bold mb-6 leading-tight"
           >
-            <span className="gradient-text dark:gradient-text-dark bg-clip-text">
+            <span className="gradient-text bg-clip-text">
               Harrison
             </span>
             <br />
-            <span className="gradient-text dark:gradient-text-dark bg-clip-text">
+            <span className="gradient-text bg-clip-text">
               Martin
             </span>
           </motion.h1>
@@ -103,7 +103,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="text-xl md:text-2xl lg:text-3xl text-gray-600 dark:text-gray-400 mb-12 max-w-4xl mx-auto font-light"
+            className="text-xl md:text-2xl lg:text-3xl text-gray-600 mb-12 max-w-4xl mx-auto font-light"
           >
             {personalInfo.subtitle}
           </motion.p>
@@ -121,7 +121,7 @@ export default function Hero() {
               href={personalInfo.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative px-8 py-4 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-2xl font-semibold shadow-xl hover:shadow-2xl transition-all overflow-hidden"
+              className="group relative px-8 py-4 bg-gray-900 text-white rounded-2xl font-semibold shadow-xl hover:shadow-2xl transition-all overflow-hidden"
             >
               <span className="relative z-10 flex items-center space-x-2">
                 <Github size={20} />
@@ -179,7 +179,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.9 }}
             onClick={() => scrollToSection('#about')}
-            className="group flex flex-col items-center space-y-2 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            className="group flex flex-col items-center space-y-2 text-gray-600 hover:text-blue-600 transition-colors"
           >
             <span className="text-sm font-medium">Explore</span>
             <motion.div
