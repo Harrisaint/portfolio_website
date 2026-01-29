@@ -60,7 +60,9 @@ export const projects: Project[] = [
       'Custom risk engine using Power Query (M) with NEWS2/AHA standards, identifying 100% risk correlation in Class II/III obesity groups (BMI > 35)',
       'Interactive Power BI dashboard with binned propensity modeling and physiological variance analysis'
     ],
-    featured: true
+    featured: true,
+    githubUrl: 'https://github.com/Harrisaint/portfolio_website',
+    liveUrl: 'https://app.powerbi.com/groups/me/reports/49e81a4e-d445-4f48-b539-e16644e5f70c/8114ca2b8762d315d2b3?experience=power-bi'
   }
 ];
 
