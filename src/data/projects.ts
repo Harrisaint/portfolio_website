@@ -49,16 +49,16 @@ export const projects: Project[] = [
     liveUrl: 'https://cancer-histology-detection.vercel.app/'
   },
   {
-    id: 'orthographic-design-analysis',
-    title: 'AI-Assisted Orthographic Design Analysis',
-    description: 'BME Research: Comparing Human vs LLM-Generated AutoCAD Designs',
-    longDescription: 'Research project analyzing the workflow and accuracy trade-offs between human-engineered and LLM-generated technical drawings. Developed prompt engineering strategies for high-quality technical drawing generation.',
+    id: 'clinical-data-pipeline',
+    title: 'Cloud Integrated Clinical Data Pipeline & Risk Analytics',
+    description: 'End-to-end clinical data pipeline with Power BI dashboard for Clinical Decision Support',
+    longDescription: 'Architected a comprehensive clinical data pipeline hosting 132,000+ synthetic patient records on AWS RDS with integrated NEWS2 and AHA risk standards. Built an interactive Power BI dashboard featuring propensity modeling and physiological variance analysis.',
     category: 'Research',
-    technologies: ['AutoCAD', 'Python', 'LLM APIs', 'Data Analysis'],
+    technologies: ['AWS RDS', 'Power Query (M)', 'Power BI', 'Data Analytics'],
     highlights: [
-      'Comparing human vs LLM-generated AutoCAD designs',
-      'Prompt development for high-quality technical drawings',
-      'Analyzing workflow + accuracy trade-offs'
+      'End-to-end clinical data pipeline hosting 132,000+ synthetic patient records on AWS RDS',
+      'Custom risk engine using Power Query (M) with NEWS2/AHA standards, identifying 100% risk correlation in Class II/III obesity groups (BMI > 35)',
+      'Interactive Power BI dashboard with binned propensity modeling and physiological variance analysis'
     ],
     featured: true
   }
